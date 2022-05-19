@@ -25,14 +25,18 @@ varTono4=1
 def inicio():
     etapaUno()
 
-def Finalizar():
+def finalizar():
     print("Luces encendidad a todo color,")
 
-def timer(int):
-    print("Inicio de conteo de 15")
+def timer(minutos):
+    print("Inicio de conteo de 15" + str(minutos))
     #Todo falta funcion que cuente los 15 minutos.
     print("Finaliza el conteo de 15")
 
+def luces(tono, color):
+    print("Se establece el color y el tono")
+    print("Color establecido a " + color)
+    print("tono establecido a" + str(tono))
 
 def etapaUno():
     print("Etapa Uno Iniciada")
@@ -60,7 +64,9 @@ def etapaCuatro():
     timer(varTiempo)
     luces(varTono4, varColorF)
     print("Etapa Cuatro finalizada")
-    Finalizar()
+    finalizar()
 
 #Trigger Inicial
 print("inicio de Manipulacion de luces")
+
+inicio()
